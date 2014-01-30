@@ -31,5 +31,10 @@ $(function() {
 
 		$(this).parents('ul').find('a').removeClass('active');
 		$(this).addClass('active');
-    })
+    });
+
+    $('.presentation-content').on('click', function(){
+        $('.modalview').addClass('animate').fadeOut(500);
+        $('.main-menu').addClass('ready');
+    });
 });
