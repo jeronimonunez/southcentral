@@ -26,6 +26,7 @@ $(function() {
 
 		$('#scroller .text').html( html );
 
+        $("#scroller").scrollTop(0);
 		$("#scroller").perfectScrollbar('update');
 
 		$(this).parents('ul').find('a').removeClass('active');
