@@ -370,6 +370,46 @@ body {
     transition-delay: 0.24s;
 }
 
+@media only screen and (max-width: 1024px) {
+    .wrapper { width: 95%; }
+    .wrapper .band-name { margin: 36px 0; }
+    .wrapper .band-name img { width: 90%; }
+    .container { width: 100%; }
+    .container aside { position: absolute; z-index: 999; left: -30px; top: 110px; }
+    .buy-btn { display:  none; }
+    #player { display: none; }
+}
+@media only screen and (max-width: 960px) {
+    .content { width: 100%; }
+    .container { height: 400px; }
+    #group-photo { width: 50%; float: left; position: relative; z-index: auto; }
+    .text-area { right: 39px; left: auto; }
+    .tabs { position: absolute; right: 11px; top: 0; left: auto; }
+    .main-menu { position: relative; margin: 0 0 30px; overflow: hidden; background: none; height: auto; }
+    .main-menu ul { width: 100%; margin: 0; padding: 0; }
+    .main-menu ul li { float: none; display: block; margin-right: 35px; text-align: left; }
+    #strip { display: none; }
+}
+@media only screen and (max-width: 720px) {
+    .presentation-content {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -50%;
+        width: 100%;
+        height: 550px;
+        background: url(../img/splash.png) 50% 0 no-repeat;
+        text-align: center;
+        color: white;
+        text-shadow: 0 2px 2px #000;
+        cursor: pointer;
+    }   
+    .padlock { padding: 130px 0 0; width: 260px; margin: 0 auto; }
+    .band-name a img { width: 90%; }
+    .wrapper .band-name { margin: 36px 0 250px; }
+    #group-photo { width: 70%; position: absolute; top: -230px; left: 60px; }
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
